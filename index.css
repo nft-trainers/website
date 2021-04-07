@@ -1,0 +1,70 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("Pokemon_GB.eot?") format("eot"),
+    url("Pokemon_GB.woff") format("woff"),
+    url("Pokemon_GB.ttf") format("truetype"),
+    url("Pokemon_GB.svg#PokemonGB") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pokemon GB";
+}
+
+.main-body {
+  max-width: 720px;
+  padding: 50px;
+  margin: auto;
+}
+
+.no-deco {
+  text-decoration: none;
+  color: black !important;
+}
+
+.box {
+  font-size: 1rem;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  border-radius: 2px;
+  padding: 1rem;
+  margin: auto;
+  background: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 0 2px black, inset 0 2px 0 2px black, 0 0 0 2px black,
+    inset 0 0 0 2px black;
+}
+.box > i {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: black;
+  animation: blink-animation 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+  float: right;
+}
+
+.main-heading {
+  align-self: flex-end;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-weight: bold;
+}
+
+.faq-heading {
+  font-weight: bold;
+}
+
+.section {
+  margin-top: 36px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
